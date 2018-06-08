@@ -83,23 +83,39 @@
     <h1 class="logo-name">
       <a class="logo-link" href="#" title="Totton Santa Run" itemprop="name">Totton Santa Run</a>
     </h1>
+    <h2 class="tagline"> Only <strong id="timer"></strong> days left!</h2>
     <h2 class="tagline">9th December, Empire Hall Totton, Totton</h2>
 
     <div class="call-action-area">
       
-        <span class="price">Only:  Child £6, Adult £12, or Family £32 (two adults / two children)
-</span>
+        
       
 
       
-        <a href="http://register.example.com" class="call-action-link" target="_blank" title="Register now!">Register now!</a>
+        
       
     </div>
   </div>
 </header>
 
 <hr>
+<script>
+  var oneDay = 24 * 60 * 60 * 1000; 
+  var secondDate = Date.parse("December 9, 2018");;
+  var firstDate = Date.now();
+  var diff = Math.round(
+    Math.abs(firstDate - secondDate) / oneDay
+  );
 
+  function myDateFunction() {
+    document.getElementById("timer").innerHTML = diff.toString();
+
+
+
+
+  }
+  Window.onload = myDateFunction()
+</script>
 
     <div class="content" id="content">
       <div class="wrapper">
