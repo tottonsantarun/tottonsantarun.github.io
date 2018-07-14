@@ -7,7 +7,7 @@
   list-style: none;
   border: 0;
   text-decoration: none;
-}
+  }
 img,
 input,
 label {
@@ -179,26 +179,26 @@ fieldset {
   margin: 0;
   padding: 0;
 }
-legend {
-  border: 0;
-  *margin-left: -7px;
-  padding: 0;
-  white-space: normal;
+legend   float: left;
+  borde  float: left;
+  *marg  float: left;
+  paddi  float: left;
+  white  float: left;
 }
-button,
+button,  float: left;
 input,
-select,
-textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
+select,  float: left;
+textare  float: left;
+  font-  float: left;
+  margi  float: left;
+  verti  float: left;
+  *vert  float: left;
 }
-button,
-input {
-  line-height: normal;
+button,  float: left;
+input {  float: left;
+  line-  float: left;
 }
-button,
+button,  float: left;
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -333,6 +333,10 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 10;
+}
+#brand {
+  margin-right: 50%;
+  height: 50px;
 }
 .nav-item {
   display: inline-block;
@@ -492,6 +496,41 @@ nav {
   line-height: 150px;
 }
 /* =============================================================================
+   BOOKING  
+   ========================================================================== */
+   form#booking-inner div.form-group label{
+    font-size: 2em;
+    line-height: 2em;
+  }
+   form#booking-inner div.form-group p{
+    font-size: 2em;
+    font-weight:bold;
+  }
+   form#booking-inner div.form-group li{
+    font-size: 2em;
+    line-height: 2em;
+  }
+   form#booking-inner div.form-group input{
+    display: block;
+    font-size: 2em;
+    padding: 5px;
+   }
+   input[type="image"]{
+    float: right;
+   }
+   form#booking-inner div.form-group select{
+    display: block;
+    font-size: 2em;
+    padding: 5px;
+  }
+  input#os2 {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  #family p {
+    font-weight:bold;
+  }
+/* =============================================================================
    CONTATO
    ========================================================================== */
 .form label {
@@ -549,6 +588,12 @@ nav {
     margin: 0;
   }
 }
+@media only screen and (max-width: 900px) {
+  #brand {
+    margin-right: 10%;
+  }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 800px) {
   /* schedule */
   .schedule-tbl {
@@ -607,6 +652,15 @@ nav {
 }
 @media only screen and (max-width: 480px) {
   /* nav */
+  form#booking-inner div.form-group select{
+    display: block;
+    font-size: 2em;
+    padding: 5px;
+    width: 100%;
+  }
+  #brand {
+    display: none;
+  }
   nav {
     display: none;
   }
@@ -918,3 +972,23 @@ nav {
     display: none;
   }
 }
+/* =============================================================================
+   FAQS
+   ========================================================================== */
+   .panel, .panel-group {
+      border: 1px solid #e7e7e7;
+      background: #fff;
+      border-radius: 4px;
+      padding: 19px;
+      font-size: 1.1em;
+      line-height: 1.2em;
+   }
+   .panel a {
+     font-size:1.2em;
+      line-height: 1.2em;
+      font-weight: bold;
+   }
+   .panel p {
+     font-size:1.1em;
+      line-height: 1.2em;
+   }
