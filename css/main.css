@@ -335,8 +335,8 @@ nav {
   z-index: 10;
 }
 #brand {
-  margin-right: 50%;
   height: 50px;
+  float: right;
 }
 .nav-item {
   display: inline-block;
