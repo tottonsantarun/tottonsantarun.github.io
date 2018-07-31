@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="generator" content="Hugo 0.42.2" />
+  <meta name="generator" content="Hugo 0.44" />
   <meta property="og:title" content="Totton SantaRun" />
 <meta property="og:description" content="A family friendly, Yuletide themed Fun Run with indoor near the line Fayre for runners and spectator enjoyment" />
 <meta property="og:type" content="website" />
@@ -179,18 +179,33 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <span class="panel-title">
-        <a data-toggle="collapse" href="#collapse1" onclick="expand(0)" >Entry fees</a>
+        <a data-toggle="collapse" href="#open0" id="open0" onclick="expand(0)" >Entry fees</a>
       </span>
     <div id="collapse0" class="panel-collapse collapse">
         <p>
             <ul>
-                <li>Adults:  	&#163;12</li>
-                <li>Under 12s:  	&#163;6</li>
-                <li>Family (2x adult and 2 x under 12s): &#163;32 (Saving &#163;4)
+                <li>Adults:  	&#163;12 (+ &#163;1.52 service charge if paying through Eventbrite) </li>
+                <li>Under 12s:  	&#163;6 (+ &#163;1.06 service charge if paying Eventbrite)</li>
+                <li>Family (2x adult and 2 x under 12s): &#163;32 (+ &#163;3.08 service charge if paying through
+                    Eventbright)
                 <li>Under 3s: Free</li>
             </ul>
         </p>
-                
+    </div>
+  </div>
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <span class="panel-title">
+        <a data-toggle="collapse" href="#open1" id="open1" onclick="expand(1)" >Why the service charge? (and how to avoid it)</a>
+      </span>
+    <div id="collapse1" class="panel-collapse collapse">
+        <p>You might have noticed, this year we are using Eventbrite for taking payments - It was not a switch we were looking to make, but
+        one we were forded into due to Paypal chenging their rules and being inflexible to our organisational needs.</p>
+        <p>On the one hand we feel it is important to offer the convienience of online booking and on the other we
+        acknowledge that some people understandably may dislike paying the service charge. If you find yourselves in the
+        second group then please be aware the service charge is only on eventbrite bookings - bookings made in person or
+        through the post are without the service charge.</p>
     </div>
   </div>
 </div>
@@ -198,27 +213,27 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <span class="panel-title">
-          <a data-toggle="collapse" href="#collapse1" onclick="expand(1)" >How do I register and pay?</a>
+          <a data-toggle="collapse" href="#open2" id="open2" onclick="expand(2)" >How do I register and pay?</a>
         </span>
-        <div id="collapse1" class="panel-collapse collapse">
+        <div id="collapse2" class="panel-collapse collapse">
             <p>We'll be taking payments later in the year.</p>      
             <p>It will be possible to pay by:</p>
             <ul class="list-inline">
-                <li>| Paypal - online            |</li>
+                <li>| Eventbrite - online        |</li>
                 <li>| Cheque - by post           |</li>
                 <li>| Cash or cheque - in person |</li>
             </ul>
             
-            <div class="panel-footer">Please choose the appropriate option from the payments section of the site menu when the time comes</div>
+            <div class="panel-footer">Please choose the appropriate option from the bookings section of the site menu when the time comes</div>
         </div>
     </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading">
         <span class="panel-title">
-            <a data-toggle="collapse" href="#collapse2" onclick="expand(2)">What happens once I've registered to take part?</a>
+            <a data-toggle="collapse" href="#open3" id="open3" onclick="expand(3)">What happens once I've registered to take part?</a>
         </span>
-            <div id="collapse2" class="panel-collapse collapse">
+            <div id="collapse3" class="panel-collapse collapse">
     <br/>
 <p>Once you have registered and paid, you will receive a confirmation email. You will need your email to collect your Santa
     suit and race number in the weeks preceeding the run, so it is essential you <span class="text-warning bg-warning">do not lose or delete the email</span></p>
@@ -229,9 +244,9 @@
 <div class="panel panel-default">
     <div class="panel-heading">
       <span class="panel-title">
-<a data-toggle="collapse" href="#collapse3" onclick="expand(3)">When and how do I collect my race pack?</a>
+<a data-toggle="collapse" href="#open4" id="open4"onclick="expand(4)">When and how do I collect my race pack?</a>
       </span>
-<div id="collapse3" class="panel-collapse collapse">
+<div id="collapse4" class="panel-collapse collapse">
     <br/>
 <p>You will receive a confirmation email, you must bring this when you are collecting your suits.</p>
 
@@ -246,9 +261,9 @@ so that you can arrive on the day suited up and ready to go!</p>
 <div class="panel panel-default">
     <div class="panel-heading">
       <span class="panel-title">
-<a data-toggle="collapse" href="#collapse4" onclick="expand(4)"  >What size are the Santa suits?</a>
+<a data-toggle="collapse" href="#open5" id="open5" onclick="expand(5)"  >What size are the Santa suits?</a>
       </span>
-<div id="collapse4" class="panel-collapse collapse">
+<div id="collapse5" class="panel-collapse collapse">
     <br/>
     <p>There are three sizes of suits, which you can request when completing the registration form. The adult suits are 'one
         size fits all', but by picking them up in advance you will have time to customize!</p>
@@ -270,6 +285,7 @@ so that you can arrive on the day suited up and ready to go!</p>
         document.getElementById("collapse2").style.display="none"
         document.getElementById("collapse3").style.display="none"
         document.getElementById("collapse4").style.display="none"
+        document.getElementById("collapse5").style.display="none"
     function expand(number) {
         str = "collapse"+number.toString()
         if (document.getElementById(str).style.display == "none") {
@@ -280,68 +296,19 @@ so that you can arrive on the day suited up and ready to go!</p>
         }
     }
 </script>
+
           </section>
         
           <section class="booking" id="booking">
             <h2 class="section-title">Booking</h2>
-<form id="booking-inner" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="CSHHTVA9RYMP8">
-    <div class="form-group">
-        <input class="form-control" type="hidden" name="on0" value="Santa Suit price includes booking fee
-    and early bird discount">
-        <label for="os0">Santa Suit price includes booking fee:</label>
-        <select class="form-control" name="os0" id="os0">
-            <option value="Adult 12yrs+">Adult 12yrs+ &#163;12 GBP</option>
-            <option value="Child 4-11yrs">Child 4-11yrs &#163;6 GBP</option>
-            <option value="Adult (18+) with infant (3 years or younger)">Adult (18+) with infant (3 years or younger) &#163;12 GBP</option>
-            <option value="Family (2 adults + 2 children (between 4 & 11 years)">Family (2 adults + 2
-            children (between 4 & 11 years) &#163;32 GBP</option>
-        </select>
-    </div>
-    <div class="form-group" id="single">
-        <p>Please choose your suit size, children get either small or large childrens suits but adults/over 12s can choose childrens sizes if they wish</p>
-        <input class="form-control" type="hidden" name="on1" value="Please specify suit size:">
-        <label for="os1">Please specify suit size:</label>
-        <select id="os1" class="form-control" name="os1">
-            <option value="Adult (One size fits all)">Adult (One size fits all) </option>
-            <option value="Child (4-7 years of age)">Child (4-7 years of age) </option>
-            <option value="Child (8-11 years of age)">Child (8-11 years of age) </option>
-        </select>
-    </div>
-    <div class="form-group" id="family" style="display:none">
-        <p>When booking a Family group ticket please indicate the sizes of the four suits you need</p>
-        <p>The size choices are</p>
-        <ul>
-            <li>Adult suits (Maximum of two per family)</li>
-            <li>Small Childrens suit size 4-7 years of age</li><li>Large Childrens suits 8-11 years of age </li>
-                <p>The adult suits are one size fits all so small adults might want to choose to have the large child size</p>
-                <p>Please make it clear as per this example <kbd>1x Adult; 2x Large Child; 1x Small Child</kbd></p>
-            </ul>
-            <input  type="hidden" name="on2" value="Family suit sizes:">
-            <label for="os2">Family suit sizes:</label>
-            <input type="text" name="os2" id="os2" class="form-control" maxlength="200" width="100">
-    </div>
-    <input type="hidden" name="currency_code" value="GBP">
-    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-    <div class="pull-right">
-        <img class="pull-right" alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-    </div>
-</form>
-<script>
-    var select = document.getElementById("os0");
-    select.onchange=function(){
-        if(select.value=="Family (2 adults + 2 children (between 4 & 11 years)"){
-            document.getElementById("single").style.display="none";
-            document.getElementById("family").style.display="block";
-        }else if(!(select.value=="Family (2 adults + 2 children (between 4 & 11 years)")){
-            document.getElementById("single").style.display="block";
-            document.getElementById("family").style.display="none";
-        }
-    }
-</script>
     
-    
+    <div class="wrapper">
+        <ol class="action-list">
+            <li>Online - using  <a href="https://www.eventbrite.co.uk/e/totton-santa-run-tickets-48529238258">Eventbrite</a></li>
+            <li>By Cheque - via post - Details and form to follow ASAP</li>
+            <li>In person - via cash or cheque - Details to follow ASAP</li>
+        </ol>
+    </div>
 
           </section>
         
