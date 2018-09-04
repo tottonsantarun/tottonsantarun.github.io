@@ -499,20 +499,20 @@ nav {
    BOOKING  
    ========================================================================== */
    form#booking-inner div.form-group label{
-    font-size: 2em;
+    font-size: 1em;
     line-height: 2em;
   }
    form#booking-inner div.form-group p{
-    font-size: 2em;
+    font-size: 1em;
     font-weight:bold;
   }
    form#booking-inner div.form-group li{
-    font-size: 2em;
+    font-size: 1em;
     line-height: 2em;
   }
    form#booking-inner div.form-group input{
     display: block;
-    font-size: 2em;
+    font-size: 1em;
     padding: 5px;
    }
    input[type="image"]{
@@ -520,7 +520,7 @@ nav {
    }
    form#booking-inner div.form-group select{
     display: block;
-    font-size: 2em;
+    font-size: 1em;
     padding: 5px;
   }
   input#os2 {
@@ -530,12 +530,14 @@ nav {
   #family p {
     font-weight:bold;
   }
-  .action-list li a {
+  #booking a.content,#booking a.callToAction  {
     color: white;
     border-radius: 4px;
     padding: 7px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     background: rgb(28, 184, 65);
+    margin-bottom: 30px;
+
   }
 /* =============================================================================
    CONTATO
