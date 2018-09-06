@@ -302,10 +302,9 @@ so that you can arrive on the day suited up and ready to go!</p>
             <input type="hidden" name="cmd" value="_s-xclick">	
             <input type="hidden" name="hosted_button_id" value="CSHHTVA9RYMP8">	
             <div class="form-group">	
-                <input class="form-control" type="hidden" name="on0" value="Santa Suit price includes booking fee	
-            and early bird discount">	
-                <label for="os0">Santa Suit price includes booking fee:</label>	
-                <select class="form-control" name="os0" id="os0">	
+                <input class="form-control" type="hidden" name="on0" value="Santa Suit price includes booking fee">	
+                <label>Santa Suit price includes booking fee:</label>	
+                <select class="form-control" id="click" name="os0" >	
                     <option value="Adult 12yrs+">Adult 12yrs+ &#163;12 GBP</option>	
                     <option value="Child 4-11yrs">Child 4-11yrs &#163;6 GBP</option>	
                     <option value="Adult (18+) with infant (3 years or younger)">Adult (18+) with infant (3 years or younger) &#163;12 GBP</option>	
@@ -317,7 +316,7 @@ so that you can arrive on the day suited up and ready to go!</p>
                 <p>Please choose your suit size, children get either small or large childrens suits but adults/over 12s can choose childrens sizes if they wish</p>	
                 <input class="form-control" type="hidden" name="on1" value="Please specify suit size:">	
                 <label for="os1">Please specify suit size:</label>	
-                <select id="os1" class="form-control" name="os1">	
+                <select  class="form-control" name="os1">	
                     <option value="Adult (One size fits all)">Adult (One size fits all) </option>	
                     <option value="Child (4-7 years of age)">Child (4-7 years of age) </option>	
                     <option value="Child (8-11 years of age)">Child (8-11 years of age) </option>	
@@ -333,7 +332,7 @@ so that you can arrive on the day suited up and ready to go!</p>
                         <p>Please make it clear as per this example <kbd>1x Adult; 2x Large Child; 1x Small Child</kbd></p>	
                     </ul>	
                     <input  type="hidden" name="on2" value="Family suit sizes:">	
-                    <label for="os2">Family suit sizes:</label>	
+                    <label>Family suit sizes:</label>	
                     <input type="text" name="os2" id="os2" class="form-control" maxlength="200" width="100">	
             </div>	
             <input type="hidden" name="currency_code" value="GBP">	
@@ -384,7 +383,7 @@ so that you can arrive on the day suited up and ready to go!</p>
 </div>
 </div>
 <script>	
-    var select = document.getElementById("os0");	
+    var select = document.getElementById("click");	
     select.onchange=function(){	
         if(select.value=="Family (2 adults + 2 children (between 4 & 11 years)"){	
             document.getElementById("single").style.display="none";	
