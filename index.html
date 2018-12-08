@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="generator" content="Hugo 0.50" />
+  <meta name="generator" content="Hugo 0.52" />
   <meta property="og:title" content="Totton SantaRun" />
 <meta property="og:description" content="A family friendly, Yuletide themed Fun Run with indoor near the line Fayre for runners and spectator enjoyment" />
 <meta property="og:type" content="website" />
@@ -50,12 +50,6 @@
         <li class="nav-item">
           <a href="#faqs" target="_blank" title="FAQs" class="nav-link">
               FAQs
-          </a>
-        </li>
-      
-        <li class="nav-item">
-          <a href="#booking" target="_blank" title="Booking" class="nav-link">
-              Booking
           </a>
         </li>
       
@@ -104,8 +98,6 @@
         
       
 
-      
-        <a href="#booking" class="call-action-link" target="_blank" title="Book now!">Book now!</a> 
       
     </div>
   </div>
@@ -283,130 +275,6 @@ so that you can arrive on the day suited up and ready to go!</p>
         document.getElementById("collapse5").style.display="none"
     function expand(number) {
         str = "collapse"+number.toString()
-        if (document.getElementById(str).style.display == "none") {
-            document.getElementById(str).style.display="block"
-            document.getElementById(str).scrollIntoView()
-        } else {
-    document.getElementById(str).style.display="none"
-        }
-    }
-</script>
-
-          </section>
-        
-          <section class="booking" id="booking">
-            <h2 class="section-title">Booking</h2>
-<div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <span class="panel-title">
-        <a data-toggle="booking" href="#open0" id="open0" onclick="expandBooking(0)" >By Paypal</a>
-      </span>
-    <div id="booking0" class="panel-collapse collapse">
-        <form id="booking-inner" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">	
-            <input type="hidden" name="cmd" value="_s-xclick">	
-            <input type="hidden" name="hosted_button_id" value="CSHHTVA9RYMP8">	
-            <div class="form-group">	
-                <input class="form-control" type="hidden" name="on0" value="Santa Suit price includes booking fee">	
-                <label>Santa Suit price includes booking fee:</label>	
-                <select class="form-control" id="click" name="os0" >	
-                    <option value="Adult 12yrs+">Adult 12yrs+ &#163;12 GBP</option>	
-                    <option value="Child 4-11yrs">Child 4-11yrs &#163;6 GBP</option>	
-                    <option value="Adult (18+) with infant (3 years or younger)">Adult (18+) with infant (3 years or younger) &#163;12 GBP</option>	
-                    <option value="Family (2 adults + 2 children (between 4 & 11 years)">Family (2 adults + 2	
-                    children (between 4 & 11 years) &#163;32 GBP</option>	
-                </select>	
-            </div>	
-            <div class="form-group" id="single">	
-                <p>Please choose your suit size, children get either small or large childrens suits but adults/over 12s can choose childrens sizes if they wish</p>	
-                <input class="form-control" type="hidden" name="on1" value="Please specify suit size:">	
-                <label for="os1">Please specify suit size:</label>	
-                <select  class="form-control" name="os1">	
-                    <option value="Adult (One size fits all)">Adult (One size fits all) </option>	
-                    <option value="Child (4-7 years of age)">Child (4-7 years of age) </option>	
-                    <option value="Child (8-11 years of age)">Child (8-11 years of age) </option>	
-                </select>	
-            </div>	
-            <div class="form-group" id="family" style="display:none">	
-                <p>When booking a Family group ticket please indicate the sizes of the four suits you need</p>	
-                <p>The size choices are</p>	
-                <ul>	
-                    <li>Adult suits (Maximum of two per family)</li>	
-                    <li>Small Childrens suit size 4-7 years of age</li><li>Large Childrens suits 8-11 years of age </li>	
-                        <p>The adult suits are one size fits all so small adults might want to choose to have the large child size</p>	
-                        <p>Please make it clear as per this example <kbd>1x Adult; 2x Large Child; 1x Small Child</kbd></p>	
-                    </ul>	
-                    <input  type="hidden" name="on2" value="Family suit sizes:">	
-                    <label>Family suit sizes:</label>	
-                    <input type="text" name="os2" id="os2" class="form-control" maxlength="200" width="100">	
-            </div>	
-            <input type="hidden" name="currency_code" value="GBP">	
-            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">	
-            <div class="pull-right">	
-                <img class="pull-right" alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">	
-            </div>	
-        </form>	
-    </div>
-  </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading">
-      <span class="panel-title">
-        <a data-toggle="booking" href="#open1" id="open1" onclick="expandBooking(1)" >By EventBrite</a>
-      </span>
-    <div id="booking1" class="panel-collapse collapse">
-        <p>You can also book via eventbrite - just follow the link - 
-           <a href="https://www.eventbrite.co.uk/e/totton-santa-run-tickets-48529238258">Eventbrite</a> 
-        </p>
-    </div>
-  </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading">
-      <span class="panel-title">
-        <a data-toggle="booking" href="#open2" id="open2" onclick="expandBooking(2)" >By Cheque</a>
-      </span>
-    <div id="booking2" class="panel-collapse collapse">
-       <p>
-           You can download this form and fill it and return it back to us with a cheque for the correct amount.
-       </p>
-           <a href="../img/offlineRegistration2018.docx">Booking form</a> 
-    </div>
-  </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading">
-      <span class="panel-title">
-        <a data-toggle="booking" href="#open3" id="open3" onclick="expandBooking(3)" >In person</a>
-      </span>
-    <div id="booking3" class="panel-collapse collapse">
-       <p>
-        If you are lucky enough to know us or are involved with the Scout group you can always pay in person.
-       </p>
-    </div>
-  </div>
-</div>
-</div>
-<script>	
-    var select = document.getElementById("click");	
-    select.onchange=function(){	
-        if(select.value=="Family (2 adults + 2 children (between 4 & 11 years)"){	
-            document.getElementById("single").style.display="none";	
-            document.getElementById("family").style.display="block";	
-        }else if(!(select.value=="Family (2 adults + 2 children (between 4 & 11 years)")){	
-            document.getElementById("single").style.display="block";	
-            document.getElementById("family").style.display="none";	
-        }	
-    }	
-
-        document.getElementById("booking0").style.display="none"
-        document.getElementById("booking1").style.display="none"
-        document.getElementById("booking2").style.display="none"
-        document.getElementById("booking3").style.display="none"
-        document.getElementById("booking4").style.display="none"
-        document.getElementById("booking5").style.display="none"
-    function expandBooking(number) {
-        str = "booking"+number.toString()
         if (document.getElementById(str).style.display == "none") {
             document.getElementById(str).style.display="block"
             document.getElementById(str).scrollIntoView()
