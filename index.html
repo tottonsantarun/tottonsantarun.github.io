@@ -34,24 +34,6 @@
     <ul>
       
         <li class="nav-item">
-          <a href="#about" target="_blank" title="About" class="nav-link">
-              About
-          </a>
-        </li>
-      
-        <li class="nav-item">
-          <a href="#location" target="_blank" title="Location" class="nav-link">
-              Location
-          </a>
-        </li>
-      
-        <li class="nav-item">
-          <a href="#schedule" target="_blank" title="Schedule" class="nav-link">
-              Schedule
-          </a>
-        </li>
-      
-        <li class="nav-item">
           <a href="#sponsors" target="_blank" title="Sponsors" class="nav-link">
               Sponsors
           </a>
@@ -70,8 +52,8 @@
     <h1 class="logo-name">
       <a class="logo-link" href="#" title="Totton Santa Run" itemprop="name">Totton Santa Run</a>
     </h1>
-    <h2 class="tagline"> Only <strong id="timer"></strong> days left!</h2>
-    <h2 class="tagline">8 December 2019 - Run starts at 9am  - Empire Hall Totton </h2>
+     
+    <h2 class="tagline">Thank you for all that ran and attended the fayre on the 8th of Dec 2019  Please return her next year for info on 2020&#39;s run </h2>
 
     <div class="call-action-area">
       
@@ -92,6 +74,13 @@
   var diff = Math.round(
     Math.abs(firstDate - secondDate) / oneDay
   );
+  if (diff === 0) {
+    diff = "It's today" 
+  }
+  if (diff < 1) {
+    diff = "It's happened" 
+  } 
+  
 
   function myDateFunction() {
     document.getElementById("timer").innerHTML = diff.toString();
@@ -106,181 +95,6 @@
 
     <div class="content" id="content">
       <div class="wrapper">
-        
-          <section class="about" id="about">
-            <h2 class="section-title">About</h2>
-
-<p>Please join us in Totton's fourth Santa Run, a 2.5km dash around Totton dressed in Santa suits or other Yuletide garb, complete with decorated pushchair and festive dog competition</p>
-
-<p>There is also the Xmas Fayre, for finish line frolics complete with Choir, Raffle and more... </p>
-
-
-
-          </section>
-        
-          <section class="location" id="location">
-            <h2 class="section-title">Location</h2>
-
-</p>
-<p>This year's 2.5km circular route starts and finishs at Library Road in the centre of Totton, This allows spectators to see both the beginning and end of the run.</p>
-
-          </section>
-        
-          <section class="schedule" id="schedule">
-            <h2 class="section-title">Schedule</h2>
-
-
-<div class="schedule-tbl">
-  <table>
-    <thead>
-      <tr>
-        <th class="schedule-time">Time</th>
-        <th class="schedule-slot">Slot</th>
-        <th class="schedule-description">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-        
-          <tr>
-            <td class="schedule-time">9h00</td>
-            <td class="schedule-slot">
-            
-
-              Festive dog competition supported by Jollyes
-              <span class="speakers-company">Jollyes Pet Superstore</span>
-            </td>
-            <td class="schedule-description">Competition for the best decorated dog</td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time">9h10</td>
-            <td class="schedule-slot">
-            
-
-              Festive Wheels Competition
-              <span class="speakers-company">5 New Forest North Scouts</span>
-            </td>
-            <td class="schedule-description">Competition for the best decorated pushchair</td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time">9h15</td>
-            <td class="schedule-slot">
-            
-
-              Santacise with Anytime Fitness
-              <span class="speakers-company">Anytime Fitness</span>
-            </td>
-            <td class="schedule-description">For runners only - a warm excercise from Anytime Fitness</td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time">9h30</td>
-            <td class="schedule-slot">
-            
-
-              Run starts and Christmas Fayre opens
-              <span class="speakers-company">Come in for refreshments after your run</span>
-            </td>
-            <td class="schedule-description">If you are running then go...
- ...If not then browse</td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time">9h30</td>
-            <td class="schedule-slot">
-            
-
-              Pocket theatre group
-              <span class="speakers-company">Pocket theatre</span>
-            </td>
-            <td class="schedule-description">Where: On the stage in hall</td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time">10h30</td>
-            <td class="schedule-slot">
-            
-              <span class="speaker-photo">
-                <img class="photo" src="/img/roverang.png" alt="Roverang Alumni Choir">
-              </span>
-            
-
-              Roverang Alumni Choir
-              <span class="speakers-company">Roverang Alumni Choir</span>
-            </td>
-            <td class="schedule-description">Choir performance</td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time">12h00</td>
-            <td class="schedule-slot">
-            
-
-              Mince Pie eating Competition / gift wrapping competition
-              <span class="speakers-company"></span>
-            </td>
-            <td class="schedule-description">Not simultaneous activities! - (Although that might be entertaining too)</td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time">13h00</td>
-            <td class="schedule-slot">
-            
-
-              The Grand Raffle
-              <span class="speakers-company">First prize £150 Xmas Hamper</span>
-            </td>
-            <td class="schedule-description">You could win yourself a fabulous hamper</td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time">13h30</td>
-            <td class="schedule-slot">
-            
-
-              Fayre closes
-              <span class="speakers-company"></span>
-            </td>
-            <td class="schedule-description"></td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time">All day</td>
-            <td class="schedule-slot">
-            
-
-              Birds of Prey - Photos
-              <span class="speakers-company"></span>
-            </td>
-            <td class="schedule-description">all day Selfies with the birds from  Falconry Uk (small charge applies)</td>
-          </tr>
-        
-      
-    </tbody>
-  </table>
-</div>
-
-          </section>
         
           <section class="sponsors" id="sponsors">
             <h2 class="section-title">Sponsors</h2>
