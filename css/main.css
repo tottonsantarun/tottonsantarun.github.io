@@ -900,12 +900,3 @@ nav {
     display: none;
   }
 }
-a#open0,a#open1,a#open2,a#open3,a#open4, a#open5{
-  line-height:2.5em;
-  font-size: 2.5em;
-}
-li, label,i,select, .panel-footer{
-  line-height:1.5em;
-  font-size: 1.5em;
-}
-
