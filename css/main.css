@@ -349,17 +349,19 @@ nav {
   text-align: center;
 }
 .logo-name {
-  margin-bottom: 0;
+  margin-bottom: 50px;
   font-size: 10em;
   letter-spacing: -0.04em;
 }
 .tagline {
-  margin-bottom: 50px;
-  font-size: 2em;
+  margin-bottom: 25px;
+  font-size: 3em;
+  font-weight: bold;
   letter-spacing: -0.02em;
 }
 .call-action-area .price {
   font-size: 2em;
+  line-height: 2em;
   font-weight: bolder;
   vertical-align: center;
   margin-right: 20px;
@@ -621,11 +623,13 @@ nav {
     padding: 20px 0;
   }
   .logo-name {
+    margin-bottom: 15px;
     font-size: 4em;
   }
   .tagline {
     margin-bottom: 15px;
-    font-size: 1.4em;
+    font-size: 1.7em;
+    font-weight: bold;
   }
   .call-action-area .price {
     font-size: 2em;
@@ -750,9 +754,6 @@ nav {
 .tagline,
 .call-action-area .price {
   color: #fff;
-}
-.tagline {
-  font-weight: normal;
 }
 .call-action-area .price {
   color: #fddd52;
