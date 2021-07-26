@@ -292,13 +292,13 @@ hr {
 h2,
 h3,
 h4 {
-  font-size: 3em;
+  font-size: 5em;
   font-weight: normal;
   margin-bottom: .4em;
   letter-spacing: -0.02em;
 }
 h3 {
-  font-size: 3em;
+  font-size: 4em;
 }
 h4 {
   font-size: 3em;
@@ -313,21 +313,9 @@ p {
   position: relative;
   top: -1px;
 }
-li  {
-  font-size: 1.6em;
-  line-height: 1.6em;
-}
 /* =============================================================================
    NAVIGATION
    ========================================================================== */
-#brand {
-    display: inline-block;
-    border-radius: 8px;
-}
-nav ul {
-    padding-left: 15px;
-    display: inline-flex;
-}
 nav {
   padding: 15px 0;
   position: fixed;
@@ -339,7 +327,7 @@ nav {
   margin-right: 15px;
 }
 .nav-link {
-  font-size: 1em;
+  font-size: 1.4em;
 }
 /* =============================================================================
    HEADER
@@ -349,24 +337,19 @@ nav {
   text-align: center;
 }
 .logo-name {
-  margin-bottom: 50px;
+  margin-bottom: 0;
   font-size: 10em;
   letter-spacing: -0.04em;
 }
 .tagline {
-  margin-bottom: 25px;
-  font-size: 3em;
-  font-weight: bold;
+  margin-bottom: 50px;
+  font-size: 2em;
   letter-spacing: -0.02em;
 }
 .call-action-area .price {
-  font-size: 2em;
-  line-height: 2em;
-  font-weight: bolder;
+  font-size: 4em;
   vertical-align: center;
   margin-right: 20px;
-  display: block;
-  margin-bottom: 24px;
 }
 .call-action-area .call-action-link,
 .btn {
@@ -492,12 +475,12 @@ nav {
   line-height: 150px;
 }
 /* =============================================================================
-   CONTACT
+   CONTATO
    ========================================================================== */
 .form label {
-  font-size: 1em;
+  font-size: 16px;
   display: block;
-  margin-bottom: 1.5em;
+  margin-bottom: .5em;
 }
 .control-group {
   height: auto;
@@ -516,30 +499,21 @@ nav {
 }
 .form input[type=text],
 .form input[type=email],
-.form textarea, 
-#os2 {
-  background: #F6F6F6;
+.form textarea {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   width: 100%;
-  min-height: 3em;
-  padding: 20px;
-  font-size: 1em;
+  min-height: 15px;
+  padding: 10px;
+  font-size: 14px;
 }
 .form textarea {
   height: 300px;
 }
-#os2 {
-    border-radius: 8px 8px 0px 0px;
-    margin-bottom: 8px;
-}
-#os2:active, #os2:focus {
-    border-bottom: #777 2px solid;
-}
-.pull-right{
+.form .btn {
   float: right;
 }
 /* =============================================================================
@@ -623,13 +597,11 @@ nav {
     padding: 20px 0;
   }
   .logo-name {
-    margin-bottom: 15px;
     font-size: 4em;
   }
   .tagline {
     margin-bottom: 15px;
-    font-size: 1.7em;
-    font-weight: bold;
+    font-size: 1.4em;
   }
   .call-action-area .price {
     font-size: 2em;
@@ -754,6 +726,10 @@ nav {
 .tagline,
 .call-action-area .price {
   color: #fff;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.tagline {
+  font-weight: normal;
 }
 .call-action-area .price {
   color: #fddd52;
@@ -761,7 +737,13 @@ nav {
 .call-action-area .call-action-link,
 .btn {
   background-color: #fddd52;
+  background-image: -moz-linear-gradient(top, #fddd52 30%, #f0a303 150%);
+  background-image: -webkit-linear-gradient(top, #fddd52 30%, #f0a303 150%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fddd52', endColorstr='#f0a303');
+  background-image: linear-gradient(top, #fddd52 30%, #f0a303 150%);
   color: #2b2b2b;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4), inset 0 -2px 3px 0 #cc7f0a, inset 0 1px 0 0 #fff9b1;
   border-radius: 40px;
 }
 .github-link {
@@ -777,17 +759,18 @@ nav {
    CONTENT
    ========================================================================== */
 .content a {
-  color: #8B0000; 
+  color: #f0a303;
 }
 .content a:hover,
 .content a:focus {
-  color: #870c25;
+  color: #fddd52;
   text-decoration: underline;
 }
 /* =============================================================================
    ABOUT
    ========================================================================== */
 .about {
+  border: 1px solid #e7e7e7;
   background: #fff;
   border-radius: 4px;
 }
@@ -796,6 +779,7 @@ nav {
    ========================================================================== */
 .location-area {
   background: #e7e7e7;
+  border: 1px solid #ccc;
   border-radius: 4px;
   height: 300px;
 }
@@ -804,6 +788,7 @@ nav {
    ========================================================================== */
 .speaker-photo .photo {
   border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
@@ -811,6 +796,7 @@ nav {
   transition: all 0.3s ease-out;
 }
 .speakers-item:hover .speaker-photo .photo {
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.3);
 }
 .speech-time {
   color: #fff;
@@ -822,7 +808,9 @@ nav {
    ========================================================================== */
 .schedule-tbl {
   background: #fff;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .schedule-tbl table {
   background: #fff;
@@ -838,6 +826,7 @@ nav {
   color: #2b2b2b;
 }
 .schedule-tbl .speaker-photo .photo {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
 }
 .speakers-company {
   color: #999;
@@ -854,39 +843,14 @@ nav {
 .schedule-other {
   color: #214f87;
 }
-
-/* =============================================================================
-   FAQ
-   ========================================================================== */
-.panel-default {
-    background: #fff;
-    border-radius: 4px;
-    margin: 12px;
-    padding: 8px;
-}
-.panel-title {
-    margin: 8px;
-    padding: 8px;
-    cursor: pointer;
-}
-.panel-heading > div {
-    display: inline-block;
-    margin: 16px;
-    padding: 6px;
-
-}
-.panel-group * {
-  font-size: 1.1em;
-  line-height: 1.1em;
-}
-
 /* =============================================================================
    SPONSORS
    ========================================================================== */
 .sponsor--link,
 .partner-link {
   background: #fff;
-  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .sponsor--link:hover,
 .sponsor--link:focus,
@@ -922,6 +886,7 @@ nav {
 @media only screen and (max-width: 480px) {
   /* speakers */
   .speaker-photo .photo {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.07);
   }
   .speech-title {
     font-weight: bolder;

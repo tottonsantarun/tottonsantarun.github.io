@@ -93,37 +93,4 @@
     };
 
     conf.init();
-    // ----------------------------------------- 
-    // Add Totton ``Santa Run JS here 
-    // ----------------------------------------- 
-
-  for (var q=0; q<2; q++) {
-     document.getElementById("booking"+q).style.display="none";
-  }
-  for (var i=0; i<5; i++) {
-     document.getElementById("collapse"+i).style.display="none";
-  }
-    window.expand = function(e) {
-        var str = e.getAttribute('data-trigger');
-        if (document.getElementById(str).style.display === "none") {
-            document.getElementById(str).style.display="block"
-        } else {
-          document.getElementById(str).style.display="none"
-        }
-      return false;
-    }
-
-
-  var oneDay = 24 * 60 * 60 * 1000; //    hours*minutes*seconds*milliseconds
-  var secondDate = Date.parse("December 13, 2020");;
-  var firstDate = Date.now();
-  var diff = Math.round(
-    Math.abs(firstDate - secondDate) / oneDay
-  );
-
-  function myDateFunction() {
-    document.getElementById("timer").innerHTML = diff.toString();
-  }
-  Window.onload = myDateFunction()
-
 }());
